@@ -27,6 +27,11 @@ research package.
 ## Repository Layout
 
 ```text
+api_server.py
+speaker_id/              generic streaming service and clustering runtime
+requirements.txt
+setup_venv.sh
+start_api.sh
 research/hdbscan_streaming/
   data/        synthetic fixtures and derived embedding fixtures
   figures/     selected paper figures for repository inspection
@@ -39,6 +44,22 @@ research/hdbscan_streaming/
 The canonical paper entry point is:
 
 [`research/hdbscan_streaming/README.md`](research/hdbscan_streaming/README.md)
+
+## Optional Streaming Service
+
+The repository also includes a generic ONNX Runtime service around the
+streaming pipeline. Model weights are not distributed. Supply a compatible
+speaker-embedding model through `SV_ONNX_PATH`:
+
+```bash
+./setup_venv.sh
+SV_ONNX_PATH=/path/to/speaker_embedding.onnx ./start_api.sh
+```
+
+The service defaults to port `8765`. See
+[`docs/DEPLOYMENT.md`](docs/DEPLOYMENT.md) for the model contract, API usage,
+and operational checks. Deployment-specific procedures and restricted
+materials are maintained separately from this public artifact.
 
 The method name in the manuscript is **FlowFish**. The implementation key used
 by the benchmark driver is `adaptive_fishdbc_async`.

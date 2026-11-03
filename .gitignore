@@ -12,6 +12,9 @@ research/hdbscan_streaming/data/fsdd/raw/
 # Runtime state
 speaker_registry.npz
 *.npz
+api.pid
+models/*
+!models/README.md
 
 .DS_Store
 *.log

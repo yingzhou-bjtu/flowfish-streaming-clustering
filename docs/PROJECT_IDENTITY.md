@@ -26,7 +26,7 @@ Paper-facing FlowFish implementation, benchmark fixtures, figures, and reproduct
 
 ## Outside the Public Scope
 
-- Private robot deployment code, exploratory notebooks, credentials, and unpublished operational materials.
+- Private deployment materials, exploratory notebooks, credentials, and unpublished operational records.
 
 ## GitHub Topics
 

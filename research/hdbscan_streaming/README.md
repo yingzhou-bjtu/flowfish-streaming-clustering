@@ -16,6 +16,10 @@ The implementation key is `adaptive_fishdbc_async`. The paper name and code
 name are intentionally documented together so that results can be traced from
 the manuscript to the benchmark driver.
 
+Additional theory review and proof notes are available in
+[`HDBSCAN流式折中算法_idea审查.md`](HDBSCAN流式折中算法_idea审查.md) and
+[`HDBSCAN流式折中算法_理论与证明草案.md`](HDBSCAN流式折中算法_理论与证明草案.md).
+
 ## What Is Reproduced
 
 | Evidence | Entry point | Output |

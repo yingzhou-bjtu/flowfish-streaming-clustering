@@ -1,0 +1,10 @@
+# Keep NumPy pinned while installing the streaming runtime dependencies.
+numpy==1.26.4
+scipy==1.11.4
+scikit-learn==1.5.2
+hdbscan==0.8.40
+onnxruntime>=1.16
+kaldi-native-fbank>=1.20
+soundfile>=0.12
+# Optional persistence/queue support.
+redis>=4.5

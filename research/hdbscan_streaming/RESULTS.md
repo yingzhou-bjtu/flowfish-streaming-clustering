@@ -28,6 +28,17 @@ exposing deferred maintenance through queue and recomputation counters.
 Source:
 `results/async_validation_release/async_comparison.json`
 
+## Real FSDD Candidate Sweep
+
+The merged real-audio candidate uses `min_samples=2` for Light,
+`min_samples=6` for Medium/Heavy, and prototype repair enabled. FlowFish has the
+best quality among the evaluated methods for Medium and Heavy. DIART has higher
+Light-prefix quality, so this is a measured Pareto result rather than a claim
+that one method dominates every prefix.
+
+Artifacts:
+`results/flowfish_best_real_audio/`.
+
 ## Paper-Scale L/M/H Rerun
 
 The longer rerun uses the committed FSDD embedding fixtures and evaluates all
